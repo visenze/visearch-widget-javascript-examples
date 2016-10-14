@@ -1,0 +1,204 @@
+.vs-filter-title .vs-filter-title-title {
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+}
+.vs-filter-title .vs-filter-title-title a {
+  color: #333333;
+}
+.vs-filter-title .vs-filter-title-title a:hover, .vs-filter-title .vs-filter-title-title a:focus {
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .vs-filter-title .vs-filter-title-heading {
+    background-color: #dedede;
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.vs-accordion-group {
+  font-family: 'Roboto-Regular', sans-serif;
+}
+.vs-accordion-group a {
+  color: black;
+  text-decoration: none;
+}
+.vs-accordion-group .vs-accordion {
+  cursor: pointer;
+  margin-right: 5%;
+}
+.vs-accordion-group .vs-accordion.vs-collapsed:before {
+  content: "\25B6";
+  font-size: 10px;
+}
+.vs-accordion-group .vs-accordion.vs-expanded:before {
+  content: "\25BC";
+  font-size: 10px;
+}
+.vs-accordion-group .vs-item-title {
+  color: #333333;
+  font-size: 14px;
+}
+.vs-accordion-group .vs-filter-clear {
+  cursor: pointer;
+  float: right;
+  font-weight: 200;
+  color: #bbbbbb;
+}
+.vs-accordion-group .vs-filter-clear:hover {
+  color: #9e9e9e;
+}
+.vs-accordion-group .vs-item-label {
+  color: #777777;
+  font-size: 12px;
+  font-weight: 100;
+}
+.vs-accordion-group .vs-panel-heading {
+  margin-bottom: 1%;
+}
+.vs-accordion-group .vs-panel-body {
+  margin-top: 10px;
+}
+.vs-accordion-group .vs-range-body {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.vs-accordion-group .vs-item-container label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+}
+.vs-accordion-group .vs-item-container .checkbox label {
+  margin-bottom: 10px;
+}
+.vs-accordion-group .vs-item-container .checkbox label:before {
+  border-radius: 3px;
+}
+.vs-accordion-group .vs-item-container input[type=checkbox] {
+  display: none;
+}
+.vs-accordion-group .vs-item-container label:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  background-color: white;
+  box-shadow: inset 0px 0px 0px 1px black;
+}
+.vs-accordion-group .vs-item-container input[type=checkbox]:checked + label:before {
+  background-color: black;
+}
+
+.InputRange-slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  display: block;
+  height: 1rem;
+  margin-left: -0.5rem;
+  margin-top: -0.65rem;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transition: -webkit-transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  width: 1rem;
+}
+
+.InputRange-slider:active {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.InputRange-slider:focus {
+  box-shadow: 0 0 0 5px rgba(63, 81, 181, 0.2);
+}
+
+.InputRange.is-disabled .InputRange-slider {
+  background: #cccccc;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.InputRange-sliderContainer {
+  transition: left 0.3s ease-out;
+}
+
+.InputRange-label {
+  color: #aaaaaa;
+  font-family: "Helvetica Neue", san-serif;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.InputRange-label--min,
+.InputRange-label--max {
+  bottom: -2rem;
+  position: absolute;
+}
+
+.InputRange-label--min {
+  left: 0;
+}
+
+.InputRange-label--max {
+  right: 0;
+}
+
+.InputRange-label--value {
+  position: absolute;
+  top: -2.5rem;
+}
+
+.InputRange-labelContainer {
+  left: -50%;
+  position: relative;
+}
+
+.InputRange-label--max .InputRange-labelContainer {
+  left: 50%;
+}
+
+.InputRange-track {
+  background: #eeeeee;
+  border-radius: 0.3rem;
+  display: block;
+  height: 0.3rem;
+  position: relative;
+  transition: left 0.3s ease-out, width 0.3s ease-out;
+}
+
+.InputRange.is-disabled .InputRange-track {
+  background: #eeeeee;
+}
+
+.InputRange-track--container {
+  left: 0;
+  margin-top: -0.15rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.InputRange-track--active {
+  background: #b86b6c;
+}
+
+.InputRange {
+  cursor: pointer;
+  height: 1rem;
+  position: relative;
+  width: 100%;
+}

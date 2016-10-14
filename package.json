@@ -1,0 +1,17 @@
+{
+  "name": "visearch-widget-examples",
+  "version": "1.1.5",
+  "description": "ViSearch widget examples",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:visenze/visearch-sdk-javascript.git"
+  },
+  "author": "liubo@visenze.com",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-watch": "^4.3.10",
+    "open": "0.0.5"
+  }
+}

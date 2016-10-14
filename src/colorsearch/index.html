@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- start of widget css customization -->
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/product-image.css">
+    <link rel="stylesheet" href="../styles/product-details.css">
+    <link rel="stylesheet" href="../styles/filter.css">
+    <!-- end of widget css customization -->
+
+    <!-- start of widget js -->
+    <script type="text/javascript" src="//cdn.visenze.com/visearch/dist/js/components/ColorSearch-0.1.0.bundle.js"></script>
+    <!-- end of widget js -->
+
+
+
+    <!-- start of widget initialization script -->
+    <script type="text/javascript" src="../js/colorsearch.js"></script>
+    <!-- end of widget initialization script -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <div class="navbar navbar-default navbar-fixed-top ctc-header" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right upper-case">
+                  <li class=""><a href="/">recommendation</a></li>
+                  <li class=""><a href="/findsimilar">find similar</a></li>
+                  <li class=""><a href="/imagesearch">image search</a></li>
+                  <li class="active"><a href="/colorsearch">color search</a></li>
+                </ul>
+              </div>
+              <hr class="header-border">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 dummy-ele search" >
+          <div class="search-box"><input type="text" class="search-text" /></div>
+          <div id="vs-colorsearch"></div>
+        </div>
+        <div class="col-xs-12 article-1 dummy-ele"></div>
+        <div class="col-xs-12 article-2 dummy-ele"></div>
+        <div class="col-xs-12 article-2 dummy-ele"></div>
+
+        <div class="col-xs-12">
+            <div class="col-md-3 col-xs-12">
+                <div id="vs-preview"></div>
+                <div id="vs-filter"></div>
+            </div>
+            <div class="col-md-9 col-xs-12">
+                <div id="vs-result-box"></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 banner">Footer</div>
+    </div>
+</body>
+
+</html>
