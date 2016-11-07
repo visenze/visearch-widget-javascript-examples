@@ -44,7 +44,7 @@ var productDetails = {
 };
 ```
 
-For detailed documentation on how to integrate and use the SDK, please refer to the our
+For detailed documentation on how to integrate and use the SDK, please refer to the our developer documentation:
 
 - [Find Similar](http://developers.visenze.com/solutions/findsimilar/)
 - [You May Also Like](http://developers.visenze.com/solutions/recommendation/)
