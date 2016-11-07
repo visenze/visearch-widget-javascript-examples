@@ -48,5 +48,5 @@ For detailed documentation on how to integrate and use the SDK, please refer to 
 
 - [Find Similar](http://developers.visenze.com/solutions/findsimilar/)
 - [You May Also Like](http://developers.visenze.com/solutions/recommendation/)
-- [Search by Color](http://developers.visenze.com/solutions/uploadsearch/)
-- [Search by Image](http://developers.visenze.com/solutions/colorsearch/)
+- [Search by Image](http://developers.visenze.com/solutions/uploadsearch/)
+- [Search by Color](http://developers.visenze.com/solutions/colorsearch/)
