@@ -1,6 +1,5 @@
 var vsSettings = {
-  accessKey: 'ACCESS_KEY',
-  secretKey: 'SECRET_KEY',
+  appKey: 'APP_KEY',
   fl: ["im_url", "price", "title", "product_url", 'brand', 'discount_price'],
   limit: 15,
   detection: "all"
@@ -15,8 +14,8 @@ var displaySettings = {
 }
 
 var findSimilarOpts = {
-  imName: "IM_NAME",
-  productDetails: {
+  imName: "IM_NAME", //dynamic
+  productDetails: { //common dynamic
     productUrl: 'product_url',
     heading: 'title',
     label: 'brand',
@@ -33,6 +32,7 @@ var options = {
   findSimilarOpts: findSimilarOpts
 };
 
+//get config first.
 $(document).ready(function() {
     FindSimilar(document.getElementById("vs-findsimilar"), options);
 });
