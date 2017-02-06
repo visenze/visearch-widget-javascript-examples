@@ -29,8 +29,7 @@ For all the widgets, you should configure the key pair and the metadata schema t
 
 ```
 var vsSettings = {
-  accessKey: 'ACCESS_KEY',
-  secretKey: 'SECRET_KEY',
+  appKey: 'APP_KEY',
   fl: ["im_url", "price", "title", "product_url", 'brand', "desc", "discount_price"],
   limit: 15
 };

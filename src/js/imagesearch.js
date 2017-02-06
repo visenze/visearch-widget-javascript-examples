@@ -1,6 +1,5 @@
 var vsSettings = {
-  accessKey: 'ACCESS_KEY',
-  secretKey: 'SECRET_KEY',
+  appKey: 'APP_KEY',
   fl: ["im_url", "price", "title", "product_url", 'brand', 'vi_category', 'discount_price'],
   limit: 15,
   detection: "all"
@@ -39,7 +38,7 @@ var onChange = function(value) {
 }
 
 var imageSearchOpts = {
-  productDetails:  {
+  productDetails:  { //common
     heading: 'title',
     productUrl: 'product_url',
     label: 'brand',

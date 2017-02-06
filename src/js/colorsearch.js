@@ -1,6 +1,5 @@
 var vsSettings = {
-  accessKey: 'ACCESS_KEY',
-  secretKey: 'SECRET_KEY',
+  appKey: 'APP_KEY',
   fl: ["im_url", "price", "title", "product_url", 'brand', 'category', 'discount_price'],
   limit: 15
 };
@@ -38,7 +37,7 @@ var onChange = function(value) {
 }
 
 var colorSearchOpts = {
-  productDetails: {
+  productDetails: { //dynamic config
     heading: 'title',
     productUrl: 'product_url',
     label: 'brand',
