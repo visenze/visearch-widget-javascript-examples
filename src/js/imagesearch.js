@@ -1,8 +1,9 @@
 var vsSettings = {
   appKey: 'APP_KEY',
-  fl: ["im_url", "price", "title", "product_url", 'brand', 'vi_category', 'discount_price'],
+  fl: ["im_url", "price", "title", "product_url", 'brand', 'category', 'price'],
   limit: 15,
-  detection: "all"
+  detection: "all",
+  botAgents: ['Googlebot'] //filter the search with the bot name in the request user agent
 };
 
 var displaySettings = {
@@ -16,18 +17,14 @@ var filterList = [
   {
     title: 'Categories',
     type: 'category',
-    schema: 'vi_category',
-    style: "check-box",
-    list: [{label: "Dress"},
-           {label: "Top"},
-           {label: "Bottom"}]
+    schema: 'category',
+    style: "check-box"
   },
   {
     title: 'Price',
     type: 'price',
     schema: 'price',
-    style : 'range-bar',
-    list: {min: 1, max: 100}
+    style : 'range-bar'
   }
 ];
 
