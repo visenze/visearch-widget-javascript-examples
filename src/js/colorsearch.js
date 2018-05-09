@@ -1,7 +1,8 @@
 var vsSettings = {
   appKey: 'APP_KEY',
   fl: ["im_url", "price", "title", "product_url", 'brand', 'category', 'discount_price'],
-  limit: 15
+  limit: 15,
+  botAgents: ['Googlebot'] //filter the search with the bot name in the request user agent
 };
 
 var displaySettings = {
@@ -16,17 +17,13 @@ var filterList = [
     title: 'Categories',
     type: 'category',
     schema: 'category',
-    style: "check-box",
-    list: [{label: "Dress"},
-           {label: "Top"},
-           {label: "Bottom"}]
+    style: "check-box"
   },
   {
     title: 'Price',
     type: 'price',
     schema: 'price',
-    style : 'range-bar',
-    list: {min: 1, max: 100}
+    style : 'range-bar'
   }
 ];
 
@@ -58,7 +55,7 @@ var options = {
   vsSettings: vsSettings,
   displaySettings: displaySettings,
   colorSearchOpts: colorSearchOpts
-}
+};
 
 $(document).ready(function() {
     ColorSearch(
